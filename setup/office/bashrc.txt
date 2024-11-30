@@ -1,0 +1,31 @@
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export M2_HOME=/opt/homebrew/Cellar/maven/3.9.1
+export PATH=$PATH:$M2_HOME/bin
+
+export localConfig=true
+export HOST=localhost
+export CONFIG_ENV=stage
+export PORT_8080=8080
+export PORT_5701=5701
+
+alias sshV2='ssh -i ~/.ssh/prod_v2_cert.pub $1'
+alias sshV1='ssh -i ~/.ssh/prod_v1_cert.pub $1'
+alias oncallbox='sshV2 dev@acc-oncall001-acc-clouddb030.phonepe.mhb -A'
+
+alias port2pid='function _port2pid(){ lsof -i :$1 };_port2pid'
+alias autosocks='autossh -M 0 -N -f -i ~/.ssh/prod_v1_cert.pub samyak.jain@prd-deploy100.phonepe.nm5 -D 1080'
+alias socks='sshV1 samyak.jain@prd-deploy100.phonepe.nm5 -D 1080'
+
+alias drove-logs-grep="echo 'grep 0M00002308221130014385236088 /pppool1/backups/drove-executor/2023/08/25/acc-drove*/plutus-merchant-reports-*/*/*'"
+alias mesos-logs-grep="echo 'grep search_text /pppool1/backups/2023/08/22/prd-accmesoss*/*/frameworks/*/executors/valhalla*/runs/*/*'"
+
+alias local-infra-up='docker-compose -f ~/Documents/docker-compose.yml -p local-infra up -d'
+alias local-infra-down='docker-compose -f ~/Documents/docker-compose.yml -p local-infra down'
+
+# ssh agent secretive for auth
+export SSH_AUTH_SOCK=/Users/samyak.jain/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/samyak.jain/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

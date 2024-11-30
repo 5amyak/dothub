@@ -1,0 +1,199 @@
+[
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//a[@id=\"signInButton\"]",
+                "error":
+                [],
+                "id": "cd5a5b25-0c56-485c-8dbf-254391f3c4fc",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "eba69c16-3eff-4363-8732-c85b83159835",
+        "initWait": 0,
+        "loadType": "window",
+        "name": "Phonepe | Olympus",
+        "source": "wizard",
+        "spreadsheetId": "",
+        "startType": "auto",
+        "updated": true,
+        "url": "https://(olympus|identity).*.phonepe.com/"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//div[@data-item-index=\"0\"]",
+                "error":
+                [],
+                "id": "145f6034-a5da-4654-bb81-a8ce12c38ce0",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "100904e4-44f8-4f29-b8fb-88c481d0375c",
+        "loadType": "window",
+        "name": "GLogin | Select Account",
+        "source": "wizard",
+        "spreadsheetId": "",
+        "startType": "auto",
+        "updated": true,
+        "url": "https://accounts.google.com/o/"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//button[normalize-space()=\"Continue\"]",
+                "error":
+                [],
+                "id": "1d129318-f63c-41b0-a42a-811a1873e2ff",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "cc313ddf-149d-4183-9952-d40936b8a3b8",
+        "loadType": "window",
+        "name": "GLogin | Continue",
+        "source": "wizard",
+        "spreadsheetId": "",
+        "startType": "auto",
+        "updated": true,
+        "url": "https://accounts.google.com/signin/"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//a[normalize-space()=\"log in\"]",
+                "id": "8e4940e2-4e8a-40d3-91dc-b5f1112f743e",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "738e6dce-3894-48e6-9c6f-6287ca8cc187",
+        "loadType": "window",
+        "name": "Jenkins | Login",
+        "source": "wizard",
+        "startType": "auto",
+        "timer": 1728715091860,
+        "updated": true,
+        "url": "https://jenkins-ng.phonepe.com/"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//a[normalize-space()=\"G Suite\"]",
+                "id": "bae915fa-6ce5-40b5-b13b-bf3c38d2de92",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "101d6488-6858-468a-a6d0-ed6422b68aab",
+        "loadType": "window",
+        "name": "Confluence | Login",
+        "source": "wizard",
+        "startType": "auto",
+        "timer": 1728715240590,
+        "updated": true,
+        "url": "https://confluence.phonepe.com/confluence/plugins/servlet/samlsso"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//button[normalize-space()=\"Login\"]",
+                "elementValue": "Login",
+                "id": "c17f9372-620d-4697-91df-c95d5b235d1d",
+                "name": "",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "b072e798-2c48-4a7e-9a5e-002c3353dd79",
+        "loadType": "window",
+        "name": "Valhalla | Login",
+        "source": "wizard",
+        "startType": "auto",
+        "timer": 1728715321304,
+        "updated": true,
+        "url": "https://valhalla.*.phonepe.*/ui/login"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//a[normalize-space()=\"G Suite\"]",
+                "id": "bf0a9fa8-f569-44a4-8185-f4a15561eb8a",
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "58023e2f-28ce-40a2-a2a4-9085d99bedf3",
+        "loadType": "window",
+        "name": "Jira | Login",
+        "source": "wizard",
+        "startType": "auto",
+        "timer": 1728715691750,
+        "updated": true,
+        "url": "https://jira.phonepe.com/plugins/servlet/samlsso"
+    },
+    {
+        "actions":
+        [
+            {
+                "elementFinder": "//input[@name=\"username\"]",
+                "elementType": "text",
+                "id": "36ff2b2f-a23e-4999-b02a-5d197611588d",
+                "name": "",
+                "value": "admin"
+            },
+            {
+                "elementFinder": "//input[@name=\"password\"]",
+                "elementType": "submit",
+                "elementValue": "",
+                "id": "305cfdfd-683c-4d38-926e-0d50640a035e",
+                "initWait": 0,
+                "name": "",
+                "value": "admin"
+            },
+            {
+                "elementFinder": "//input[@value=\"Login\"]",
+                "error":
+                [],
+                "id": "2246188e-0297-476c-a565-5d61b9f3f6f5",
+                "statement":
+                {
+                    "conditions":
+                    [
+                        {
+                            "actionIndex": 0,
+                            "id": "e2189708-e3b2-43f4-b75b-743d6f840611",
+                            "status": "done"
+                        },
+                        {
+                            "actionIndex": 1,
+                            "id": "3a3360e9-ebd7-455d-96c0-fbd582caebdd",
+                            "operator": "and",
+                            "status": "done"
+                        }
+                    ],
+                    "then": "proceed"
+                },
+                "value": "MouseEvents::click"
+            }
+        ],
+        "enable": true,
+        "id": "ce29cfee-9f83-4d09-87f9-7543006e8ea8",
+        "loadType": "window",
+        "name": "RMQ Management",
+        "source": "wizard",
+        "startType": "auto",
+        "timer": 1728715831632,
+        "updated": true,
+        "url": "http://.*:15672/"
+    }
+]
