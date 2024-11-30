@@ -1,4 +1,4 @@
 # dothub
 
 ## Wallpapers
-Credits: https://basicappleguy.com/basicappleblog/category/Wallpaper
+Credit: https://basicappleguy.com/basicappleblog/category/Wallpaper
